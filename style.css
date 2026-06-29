@@ -325,3 +325,64 @@ h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;}
 .tips-cta h2{color:#fff;}
 .tips-cta-lede{font-size:1.12rem;color:#c8c4bd;margin:0 auto 1.8rem;max-width:54ch;}
 .btn-lg{font-size:1.15rem;padding:1rem 2.2rem;}
+
+/* ============================================================
+   contact page: join CTA, thanks, trainers, sponsors
+   ============================================================ */
+
+/* join button inside contact card */
+.contact-join{margin:1.8rem 0 .4rem;}
+.contact-join-note{font-size:.92rem;color:var(--grey);margin:.9rem 0 0;}
+
+/* contact-alt tweak so the discord line stands out a touch more */
+.contact-alt a strong{color:var(--red-deep);}
+
+/* thanks section */
+.thanks-section{padding:clamp(3rem,7vw,5.5rem) 0;background:var(--cream);}
+
+.thanks-highlight{
+  display:flex;gap:1.2rem;align-items:flex-start;
+  background:var(--card);border:1px solid var(--border);border-left:5px solid var(--red);
+  border-radius:var(--radius);padding:1.8rem;box-shadow:var(--shadow-lg);
+  margin:1.5rem 0;
+}
+.thanks-highlight-badge{
+  font-size:1.6rem;color:#fff;background:var(--red);
+  width:48px;height:48px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.thanks-highlight-body h3{font-size:1.5rem;color:var(--charcoal);margin-bottom:.2rem;}
+.thanks-role{font-family:'Outfit',sans-serif;font-weight:700;color:var(--red-deep);font-size:.95rem;margin:0 0 .7rem;text-transform:uppercase;letter-spacing:.04em;}
+.thanks-highlight-body p:last-child{margin:0;color:#3a3e46;}
+
+.thanks-feature{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.5rem 1.8rem;box-shadow:var(--shadow);margin:1.2rem 0 2.5rem;
+}
+.thanks-feature h3{font-size:1.25rem;color:var(--charcoal);margin-bottom:.2rem;}
+.thanks-feature p:last-child{margin:0;color:#3a3e46;}
+
+.thanks-subhead{font-size:1.4rem;color:var(--charcoal);margin:2.5rem 0 .4rem;}
+.thanks-sub-note{font-size:.98rem;color:var(--grey);margin:0 0 1.2rem;max-width:60ch;}
+
+/* trainer chips */
+.trainer-chips{display:flex;flex-wrap:wrap;gap:.7rem;}
+.trainer-chip{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;
+  background:var(--charcoal);color:#fff;border-radius:999px;
+  padding:.5rem 1.1rem;border:2px solid var(--red);
+}
+
+/* sponsor grid */
+.sponsor-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;}
+.sponsor-card{
+  display:flex;flex-direction:column;gap:.2rem;
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.2rem 1.4rem;box-shadow:var(--shadow);
+  transition:transform .14s ease,box-shadow .14s ease;
+}
+.sponsor-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);text-decoration:none;}
+.sponsor-name{font-family:'Outfit',sans-serif;font-weight:800;font-size:1.08rem;color:var(--charcoal);}
+.sponsor-sub{font-size:.9rem;color:#3a3e46;}
+.sponsor-handle{font-size:.9rem;color:var(--red-deep);font-weight:600;margin-top:.2rem;}
+.sponsor-card:hover .sponsor-handle{color:var(--red);}

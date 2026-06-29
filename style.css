@@ -253,10 +253,7 @@ h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;}
 
 /* panoramic group photo */
 .group-photo-section{background:var(--charcoal);padding-bottom:1.6rem;}
-.group-photo{width:90%;max-width:760px;height:auto;display:block;margin:0 auto;border-radius:var(--radius);}
-@media (max-width:760px){
-  .group-photo{width:90%;}
-}
+.group-photo{width:100%;max-width:var(--maxw);height:auto;display:block;margin:0 auto;border-radius:var(--radius);padding:0 24px;}
 .group-caption{padding-top:1rem;text-align:center;}
 .group-caption p{color:#c8c4bd;font-size:.96rem;margin:0;}
 
@@ -321,3 +318,10 @@ h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;}
 .friend-code{display:inline-flex;align-items:center;gap:.5rem;background:var(--cream);border:1px solid var(--border);border-radius:999px;padding:.4rem .9rem;font-size:.92rem;}
 .fc-name{font-family:'Outfit',sans-serif;font-weight:700;color:var(--red-deep);}
 .friend-code code{font-family:'Inter',monospace;font-variant-numeric:tabular-nums;letter-spacing:.04em;color:var(--charcoal);font-size:.95rem;}
+
+/* tips & tools call-to-action (home page) */
+.tips-cta{background:var(--charcoal);color:#fff;padding:clamp(3rem,7vw,5rem) 0;text-align:center;border-top:3px solid var(--red);}
+.tips-cta-inner{max-width:680px;margin:0 auto;}
+.tips-cta h2{color:#fff;}
+.tips-cta-lede{font-size:1.12rem;color:#c8c4bd;margin:0 auto 1.8rem;max-width:54ch;}
+.btn-lg{font-size:1.15rem;padding:1rem 2.2rem;}
